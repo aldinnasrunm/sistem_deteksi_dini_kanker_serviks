@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(
     page_title="Sistem Deteksi Dini Kanker Serviks",
-    page_icon="👋",
+    page_icon="❤️",
     initial_sidebar_state="collapsed",
 )
 
@@ -38,3 +38,8 @@ elif selected == "Berita":
 elif selected == "Prediksi":
     import pages.prediksi as prediksi
     prediksi.app()  
+
+
+
+footer = """<style>.footer {position: fixed;left: 0;bottom: 0;width: 100%;background-color: #000;color: white;text-align: center;}</style><div class='footer'><br><p>Copyright Informatika UMS 2024</p></div>"""
+st.markdown(footer, unsafe_allow_html=True)
