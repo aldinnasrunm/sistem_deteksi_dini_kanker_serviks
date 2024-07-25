@@ -1,0 +1,2 @@
+streamlit==1.22.0  # or the latest version available
+streamlit-option-menu==0.3.2  # or the latest version available
