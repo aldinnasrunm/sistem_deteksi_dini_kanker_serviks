@@ -18,7 +18,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("Sistem Deteksi Dini Kanker Serviks")
 selected = option_menu(
     menu_title=None,
     options=['Home', 'Berita', 'Prediksi'],

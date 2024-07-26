@@ -14,7 +14,7 @@ def app():
     bleeding_duration = st.selectbox("Lama Pendarahan", options=[1, 2, 3], format_func=lambda x: "< 7 Hari" if x == 1 else "7 – 14 Hari" if x == 2 else "> 14 Hari")
     abdominal_mass = st.radio("Benjolan di Perut", options=[1, 2], format_func=lambda x: "Tidak" if x == 1 else "Ya")
 
-    if st.button("Hasil Prediksi"):
+    if st.button("Hasil Prediksi ➡️"):
         result = predict_cervical_cancer(age, age_at_first_menstruation, pelvic_pain, lower_abdomen_pain, weight_loss, fatigue, discharge_color, bleeding_outside_cycle, bleeding_duration, abdominal_mass)
         st.subheader("Hasil Prediksi:")
         st.write(result)
