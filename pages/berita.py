@@ -27,11 +27,7 @@ def app():
         with col1:
             response = requests.get(article['image'], stream=True)
             img = Image.open(response.raw)
-            
-            # Resize the image to a 1:1 aspect ratio
             square_img = resize_to_square(img, 150)
-            
-            # Display the image
             st.image(square_img, width=150)
         with col2:
             st.markdown(f"""
